@@ -15,6 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post("/signIn", userController.signIn);
 app.get("/check_api", userController.checkApi);
 
-app.listen(8080, /*'0.0.0.0',*/ () => {
+app.listen(8080, '0.0.0.0', () => {
     console.log("Server running on port 8080");
 });
